@@ -33,6 +33,11 @@ public class FormValidation extends Application {
     private final static BooleanProperty GRANTED_ACCESS = new SimpleBooleanProperty(false);
     private final static int MAX_ATTEMPTS = 3;
     private final IntegerProperty ATTEMPTS = new SimpleIntegerProperty(0);
+
+    @Override
+    public void init() {
+        // NOTE: Not allowed to create a Stage or Scene in the init() method
+    }
     
     @Override
     public void start(Stage primaryStage) {
